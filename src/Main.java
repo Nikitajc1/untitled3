@@ -1,17 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        int x = 1000;
-        int y = 2000;
-        int z = x + y;
-        int w = y / 100;
-        int c = z + w;
+        int amount = 1000;
+        int refill = 2000;
+        int check = amount + refill;
+        int bonus = refill / 100;
+        int bill = check + bonus;
 
-        if (y > 1000) {
-            System.out.println("Итоговый счёт: " + c);
-            System.out.println("Бонусных рублей: " + w);
+        if (refill > 1000) {
+            System.out.println("Итоговый счёт: " + bill);
+            System.out.println("Бонусных рублей: " + bonus);
         }
         else {
-            System.out.println("Итоговый счёт: " + z);
+            System.out.println("Итоговый счёт: " + check);
             System.out.println("Бонусных рублей: 0");
         }
     }
